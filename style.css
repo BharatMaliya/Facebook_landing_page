@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+.or {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    display: block;
+    height: 0.5px;
+    background-color: #ccd0d5;
+}
+
+@tailwind utilities;
